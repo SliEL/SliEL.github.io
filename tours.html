@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Tours | Sahara Serenity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .tour-card:hover .tour-image {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="index.html" class="text-2xl font-bold text-orange-700"
+          >Sahara Serenity</a
+        >
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="index.html#destinations"
+            class="text-gray-600 hover:text-orange-600 transition duration-300"
+            >Destinations</a
+          >
+          <a
+            href="tours.html"
+            class="text-orange-600 font-semibold transition duration-300"
+            >Tours</a
+          >
+          <a
+            href="reviews.html"
+            class="text-gray-600 hover:text-orange-600 transition duration-300"
+            >Reviews</a
+          >
+          <a
+            href="gallery.html"
+            class="text-gray-600 hover:text-orange-600 transition duration-300"
+            >Gallery</a
+          >
+          <a
+            href="index.html#about"
+            class="text-gray-600 hover:text-orange-600 transition duration-300"
+            >About Us</a
+          >
+          <a
+            href="index.html#contact"
+            class="text-gray-600 hover:text-orange-600 transition duration-300"
+            >Contact</a
+          >
+        </div>
+        <a
+          href="https://wa.me/212000000000?text=I'm%20interested%20in%20booking%20a%20tour!"
+          target="_blank"
+          class="hidden md:block bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition duration-300 shadow-lg"
+          >Book Now</a
+        >
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+        <a
+          href="index.html#destinations"
+          class="block py-2 text-gray-600 hover:text-orange-600"
+          >Destinations</a
+        >
+        <a href="tours.html" class="block py-2 text-orange-600 font-semibold"
+          >Tours</a
+        >
+        <a
+          href="reviews.html"
+          class="block py-2 text-gray-600 hover:text-orange-600"
+          >Reviews</a
+        >
+        <a
+          href="gallery.html"
+          class="block py-2 text-gray-600 hover:text-orange-600"
+          >Gallery</a
+        >
+        <a
+          href="index.html#about"
+          class="block py-2 text-gray-600 hover:text-orange-600"
+          >About Us</a
+        >
+        <a
+          href="index.html#contact"
+          class="block py-2 text-gray-600 hover:text-orange-600"
+          >Contact</a
+        >
+        <a
+          href="https://wa.me/212000000000?text=I'm%20interested%20in%20booking%20a%20tour!"
+          target="_blank"
+          class="mt-4 block w-full text-center bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition duration-300"
+          >Book Now</a
+        >
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bg-gray-50">
+      <div class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-orange-700">
+            Our Signature Tours
+          </h1>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Each journey is thoughtfully crafted to offer an authentic and
+            unforgettable experience. Explore our curated tours and find the
+            perfect adventure for you.
+          </p>
+        </div>
+
+        <div class="space-y-16">
+          <!-- Tour Card 1 -->
+          <div
+            class="tour-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row"
+          >
+            <div class="md:w-1/2 overflow-hidden">
+              <img
+                src="https://placehold.co/800x600/FFA500/FFFFFF?text=Imperial+Cities"
+                alt="Imperial Cities of Morocco"
+                class="tour-image w-full h-full object-cover transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            <div class="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+              <h2 class="text-3xl font-bold text-gray-800 mb-3">
+                Imperial Cities & Desert Wonders
+              </h2>
+              <div class="text-orange-600 font-semibold mb-4">
+                10 Days / 9 Nights
+              </div>
+              <p class="text-gray-600 mb-6">
+                A grand tour through Morocco's historic heart. Journey from the
+                vibrant souks of Marrakech and Fes to the tranquil majesty of
+                the Sahara desert.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-6 text-gray-700">
+                <span class="flex items-center"
+                  ><i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                  Marrakech, Fes, Sahara</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-users text-orange-500 mr-2"></i> Private or
+                  Small Group</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-car text-orange-500 mr-2"></i> Private A/C
+                  Vehicle</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-hotel text-orange-500 mr-2"></i> Riads &
+                  Desert Camp</span
+                >
+              </div>
+              <div class="mt-auto">
+                <a
+                  href="https://wa.me/212000000000?text=I'm%20interested%20in%20the%20Imperial%20Cities%20&%20Desert%20Wonders%20tour!"
+                  target="_blank"
+                  class="inline-block w-full text-center bg-orange-600 text-white px-8 py-3 rounded-full hover:bg-orange-700 transition duration-300 text-lg font-semibold shadow-md"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 2 -->
+          <div
+            class="tour-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row-reverse"
+          >
+            <div class="md:w-1/2 overflow-hidden">
+              <img
+                src="https://placehold.co/800x600/87CEEB/FFFFFF?text=Blue+Chefchaouen"
+                alt="Blue city of Chefchaouen"
+                class="tour-image w-full h-full object-cover transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            <div class="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+              <h2 class="text-3xl font-bold text-gray-800 mb-3">
+                Northern Gems & The Blue City
+              </h2>
+              <div class="text-orange-600 font-semibold mb-4">
+                7 Days / 6 Nights
+              </div>
+              <p class="text-gray-600 mb-6">
+                Discover the magic of Northern Morocco. Explore the blue-washed
+                streets of Chefchaouen, the historic medina of Fes, and the
+                coastal city of Tangier.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-6 text-gray-700">
+                <span class="flex items-center"
+                  ><i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                  Tangier, Chefchaouen, Fes</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-users text-orange-500 mr-2"></i> Private
+                  Tour</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-utensils text-orange-500 mr-2"></i> Daily
+                  Breakfast</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-camera text-orange-500 mr-2"></i>
+                  Picturesque Scenery</span
+                >
+              </div>
+              <div class="mt-auto">
+                <a
+                  href="https://wa.me/212000000000?text=I'm%20interested%20in%20the%20Northern%20Gems%20tour!"
+                  target="_blank"
+                  class="inline-block w-full text-center bg-orange-600 text-white px-8 py-3 rounded-full hover:bg-orange-700 transition duration-300 text-lg font-semibold shadow-md"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour Card 3 -->
+          <div
+            class="tour-card bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row"
+          >
+            <div class="md:w-1/2 overflow-hidden">
+              <img
+                src="https://placehold.co/800x600/D2B48C/FFFFFF?text=Sahara+Adventure"
+                alt="Camel ride in Sahara Desert"
+                class="tour-image w-full h-full object-cover transition-transform duration-500 ease-in-out"
+              />
+            </div>
+            <div class="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+              <h2 class="text-3xl font-bold text-gray-800 mb-3">
+                Authentic Sahara Adventure
+              </h2>
+              <div class="text-orange-600 font-semibold mb-4">
+                4 Days / 3 Nights
+              </div>
+              <p class="text-gray-600 mb-6">
+                An immersive journey into the vast Sahara. Ride camels across
+                golden dunes, watch the sunset, and sleep under a canopy of
+                stars in a luxury Berber camp.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-6 text-gray-700">
+                <span class="flex items-center"
+                  ><i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                  Ouarzazate, Merzouga</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-campground text-orange-500 mr-2"></i> Luxury
+                  Desert Camp</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-moon text-orange-500 mr-2"></i> Stargazing
+                  Experience</span
+                >
+                <span class="flex items-center"
+                  ><i class="fas fa-drum text-orange-500 mr-2"></i> Berber Music
+                  & Dinner</span
+                >
+              </div>
+              <div class="mt-auto">
+                <a
+                  href="https://wa.me/212000000000?text=I'm%20interested%20in%20the%20Authentic%20Sahara%20Adventure%20tour!"
+                  target="_blank"
+                  class="inline-block w-full text-center bg-orange-600 text-white px-8 py-3 rounded-full hover:bg-orange-700 transition duration-300 text-lg font-semibold shadow-md"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 Sahara Serenity. All Rights Reserved.</p>
+        <p class="text-sm text-gray-400 mt-2">Crafted with ❤️ in Morocco</p>
+      </div>
+    </footer>
+
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
